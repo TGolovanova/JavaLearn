@@ -52,27 +52,27 @@ public class FirstTests {
 
     @Test(dataProvider = "testPositiveComps")
     public void positiveOne(int one, int two, int three) {
-        Assert.assertEquals(one, new Execute().sumResult(two, three), "Значения равны!");
+        Assert.assertEquals(one, new Execute().sumResult(two, three), "Значения должны быть равны!");
     }
 
     @Test(dataProvider = "testPositiveComps")
     public void positiveTwo(int one, int two, int three) {
-        Assert.assertEquals(two, new Execute().subResult(one, three), "Значения равны!");
+        Assert.assertEquals(two, new Execute().subResult(one, three), "Значения должны быть равны!");
     }
 
     @Test(dataProvider = "testPositiveMul")
     public void positiveFour(int one, int two, int three) {
-        Assert.assertEquals(one, new Execute().multiResult(two, three), "Значения равны!");
+        Assert.assertEquals(one, new Execute().multiResult(two, three), "Значения должны быть равны!");
     }
 
     @Test(dataProvider = "testPositiveMul")
     public void positiveFive(double one, double two, double three) {
-        Assert.assertEquals(two, new Execute().divResult(one, three), "Значения равны!");
+        Assert.assertEquals(two, new Execute().divResult(one, three), "Значения должны быть равны!");
     }
 
     @Test(dataProvider = "testPositiveComps")
     public void testNegativeOne(int one, int two, int three) {
-        Assert.assertNotEquals(two, new Execute().sumResult(one, three), "Значения не равны!");
+        Assert.assertNotEquals(two, new Execute().sumResult(one, three), "Значения не должны быть равны!");
     }
 
     @Test(dataProvider = "testNegative", expectedExceptions = {ClassCastException.class, NullPointerException.class, AssertionError.class})
@@ -82,7 +82,7 @@ public class FirstTests {
 
     @Test(dataProvider = "testPositiveComps")
     public void testNegativeThree(int one, int two, int three) {
-        Assert.assertNotEquals(one, new Execute().subResult(two, three), "Значения не равны!");
+        Assert.assertNotEquals(one, new Execute().subResult(two, three), "Значения не должны быть равны!");
     }
 
     @Test(dataProvider = "testNegative", expectedExceptions = {ClassCastException.class, NullPointerException.class, AssertionError.class})
@@ -92,7 +92,7 @@ public class FirstTests {
 
     @Test(dataProvider = "testPositiveMul")
     public void testNegativeFive(int one, int two, int three) {
-        Assert.assertNotEquals(three, new Execute().multiResult(one, two), "Значения не равны!");
+        Assert.assertNotEquals(three, new Execute().multiResult(one, two), "Значения не должны быть равны!");
     }
 
     @Test(dataProvider = "testNegative", expectedExceptions = {ClassCastException.class, NullPointerException.class, AssertionError.class})
@@ -112,7 +112,7 @@ public class FirstTests {
 
     @Test(dataProvider = "testBorders")
     public void testBordersOne(Object one, Object two,Object three) {
-        Assert.assertNotEquals(two, new Execute().multiResult(one, three), "Значения равны");
+        Assert.assertNotEquals(two, new Execute().multiResult(one, three), "Значения должны быть равны");
     }
 
 }
