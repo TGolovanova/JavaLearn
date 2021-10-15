@@ -7,6 +7,10 @@ import skills.Voice;
 
 public class Duck extends Herbivore implements Fly, Voice, Swim, Run {
 
+    public Duck(String name) {
+        super(name, AviarySizeType.SMALL);
+    }
+
     @Override
     public void fly() {
 
@@ -27,4 +31,8 @@ public class Duck extends Herbivore implements Fly, Voice, Swim, Run {
         return "кря-кря";
     }
 
+    @Override
+    public String toString() {
+        return String.format("Duck(%s)", getName());
+    }
 }
