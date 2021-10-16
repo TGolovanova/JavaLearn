@@ -1,0 +1,17 @@
+{
+  "title": "{I love Figure Skating}",
+  "created": "{2021-10-16T13:51:33.232Z}",
+  "modified": "{2021-10-16T13:51:33.232Z}",
+  "submitter_email": "{ferrana2430@yandex.ru}",
+  "status": ${1},
+  "on_hold": {true},
+  "description": "string",
+  "resolution": "string",
+  "priority": 1,
+  "due_date": "2021-10-16T13:51:33.232Z",
+  "secret_key": "string",
+  "queue": 0,
+  "assigned_to": 0,
+  "kbitem": 0,
+  "merged_to": 0
+}

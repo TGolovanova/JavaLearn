@@ -108,4 +108,5 @@ public class WebActionSteps {
                 .shouldBe(Condition.visible)
                 .clear();
     }
+
 }
